@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Meta Information -->
+<meta charset="UTF-8">
+<meta name="description" content="Bootstrap Example #2">
+<meta name="keywords" content="HTML,CSS,JavaScript">
+<meta name="author" content="Arcademan">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Title Area -->
+<title>Bootstrap Example #2</title>
+
+<!-- Normalize: CSS -->
+<link rel="stylesheet" href="css/normalize.css" />
+
+<!-- BootStrap: CSS -->
+<link rel="stylesheet" href="css/bootstrap.css" />
+
+<!-- JQuery -> BootStrap: JavaScript -->
+<script src="scripts/jquery.js"></script>
+<script src="scripts/bootstrap.js"></script>
+</head>
+
+<!-- Main Body -->
+<body class="container-fluid" style="padding: 100px; background: #F5F5F5">
+
+    <div class="row">
+        <div class="col-md-4 col-sm-4 text-center">
+            <h2>Canvas Area:</h2>
+            </br>
+        </div>
+    </div>
+
+    <!-- 12 Column Row: 12 -->
+    <div class="row">
+     	<div class="col-md-2 col-sm-2">
+            <canvas id="area1" width="200" height="200" style="border: 1px solid black"></canvas>
+        </div>
+        <div class="col-md-2 col-sm-2">
+            <canvas id="area2" width="200" height="200" style="border: 1px solid black"></canvas>
+        </div>
+    </div>
+
+    <!-- 12 Column Row: 12 -->
+    <div class="row">
+     	<div class="col-md-2 col-sm-2">
+            <canvas id="area3" width="200" height="200" style="border: 1px solid black"></canvas>
+        </div>
+        <div class="col-md-2 col-sm-2">
+            <canvas id="area4" width="200" height="200" style="border: 1px solid black"></canvas>
+        </div>
+    </div>
+
+    <script>
+        // Get Inner Element ID
+        var a = document.getElementById("area1");
+        var b = document.getElementById("area2");
+        var c = document.getElementById("area3");
+        var d = document.getElementById("area4");
+
+        // Create 2d Object
+        var atx = a.getContext("2d");
+        var btx = b.getContext("2d");
+        var ctx = c.getContext("2d");
+        var dtx = d.getContext("2d");
+
+        // Draw: Line : A
+        atx.moveTo(0, 0);
+        atx.lineTo(200, 200);
+        atx.stroke();
+
+        // Draw: Circle: B
+        btx.beginPath();
+        btx.arc(100, 100, 50, 0, 2 * Math.PI);
+        btx.stroke();
+
+        // Draw: Text: Hello World: C
+        ctx.font = "30px Arial";
+        ctx.fillText("Hello World", 20, 100);
+
+        // Draw: Circle: Animated: D
+        for (var x = 70; x < 100; x++) {
+            dtx.beginPath();
+            dtx.arc(100, x, 50, 0, 2 * Math.PI);
+            dtx.stroke()
+        }
+             
+    </script>
+
+</body>
+
+</html>
