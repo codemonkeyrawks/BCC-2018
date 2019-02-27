@@ -14,7 +14,7 @@ Project:
   /CJS-06         - Chart Example 6 - Doughnut
   /CJS-07         - Chart Example 7 - Bubble
   /CJS-08         - Chart Example 8 - Horizonal - JScript
-  /MJ-01          - Math Example #1 - Basic Math
+  /MJ-01          - Math Example 1 - Basic Math
   /Presentation   - Presentation - BCC 2018 P1
 
 Testing:
