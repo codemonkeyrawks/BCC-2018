@@ -3,6 +3,7 @@ Structure:
 ```shell
 Project:
   licence.txt     - CC-BY-SA Licence
+  notice.txt      - Copyright Holders
   readme.md       - Getting Started Guide
   /BS-01          - Bootstrap Example 1
   /BS-02          - Bootstrap Example 2
